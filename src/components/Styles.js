@@ -157,8 +157,8 @@ export const OptionalPhoneInput = styled(Input)`
 // Stylizacja tekstu powitalnego
 export const WelcomeText = styled.p`
  font-size: 1.3rem; // Zwiększona czcionka
-  margin: 10px 0; // Odstępy góra-dół
-  text-align: center; // Wyrównanie tekstu do środka
+  margin: 20px 15px; // Odstępy góra-dół
+  text-align: auto; // Wyrównanie tekstu do środka
   color: white; // Kolor tekstu
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Wyraźny cień dla kontrastu
   animation: fadeIn 1s ease-in-out; // Animacja pojawiania się
@@ -184,7 +184,7 @@ export const WelcomeText = styled.p`
 
 export const NavbarContainer = styled.nav`
   background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -226,6 +226,8 @@ export const Profile = styled.div`
 // Stylizacja zdjęcia profilowego
 export const ProfileImg = styled.img`
   border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -333,7 +335,7 @@ export const ProjectsContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto; /* Wyśrodkowanie kontenera */
   text-align: center;
-  margin-left: 300px; /* Przesunięcie w prawo, dostosuj według potrzeb */
+  margin-left: 320px; /* Przesunięcie w prawo, dostosuj według potrzeb */
 
   h2 {
     margin-bottom: 30px;
@@ -397,7 +399,7 @@ export const ProjectButton = styled.button`
 
 // Kontener dla strony głównej
 export const HomeContainer = styled.div`
-  padding-left: 80px;
+  padding-left: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -587,6 +589,7 @@ export const SocialMediaLink = styled.a`
   border-radius: 10px; // Ustawienie mniejszego zaokrąglenia
   padding: 12px; // Wewnętrzne marginesy
   margin: 0 15px; // Odstęp między ikonami
+  margin-bottom: 20px;
   display: flex; // Flexbox dla centrowania
   justify-content: center; // Wyrównanie do środka
   align-items: center; // Wyrównanie do środka

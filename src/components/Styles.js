@@ -104,18 +104,31 @@ export const Textarea = styled.textarea`
 
 // Przycisk wysyłania formularza
 export const SubmitButton = styled.button`
-  padding: 12px 20px;
-  background-color: #1abc9c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.5rem;  // Zmniejszono
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 12px 20px; // Wewnętrzne marginesy
+  background: linear-gradient(135deg, #1abc9c, #16a085); // Gradient od ciemniejszego do jaśniejszego koloru
+  color: white; // Kolor tekstu
+  border: none; // Brak obramowania
+  border-radius: 30px; // Zaokrąglone rogi
+  font-size: 1.5rem; // Zmniejszona czcionka
+  cursor: pointer; // Kursor w postaci wskaźnika
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); // Cień pod przyciskiem
+  transition: all 0.3s ease; // Płynna animacja dla wszystkich właściwości
+  text-transform: uppercase; // Wielkie litery dla tekstu
+
   &:hover {
-    background-color: #16a085;
+    background: linear-gradient(135deg, #16a085, #1abc9c); // Zmiana gradientu przy hover
+    transform: translateY(-2px); // Lekki efekt unoszenia
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); // Zwiększenie cienia przy hover
+  }
+
+  &:active {
+    transform: translateY(2px); // Efekt "wciskania" przy kliknięciu
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // Zmniejszenie cienia przy kliknięciu
   }
 `;
+
+
+
 
 // Stylizacja dla checkboxa zgody na przetwarzanie danych
 export const CheckboxWrapper = styled.div`
@@ -143,13 +156,30 @@ export const OptionalPhoneInput = styled(Input)`
 
 // Stylizacja tekstu powitalnego
 export const WelcomeText = styled.p`
-  margin-top: 20px;
-  color: white;
-  margin-left: 0px;
-  font-size: 1.3rem;  // Zmniejszono
-  text-align: center;
-  line-height: 1.2;
-  margin-bottom: 10px;
+ font-size: 1.3rem; // Zwiększona czcionka
+  margin: 10px 0; // Odstępy góra-dół
+  text-align: center; // Wyrównanie tekstu do środka
+  color: white; // Kolor tekstu
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Wyraźny cień dla kontrastu
+  animation: fadeIn 1s ease-in-out; // Animacja pojawiania się
+
+  // Animacja wjazdu
+  @keyframes fadeIn {
+    from {
+      opacity: 0; // Początkowo niewidoczny
+      transform: translateY(-20px); // Wjazd z góry
+    }
+    to {
+      opacity: 1; // W pełni widoczny
+      transform: translateY(0); // Pozycja końcowa
+    }
+  }
+
+  // Efekt podkreślenia przy hover
+  &:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); // Zwiększenie cienia przy hover
+    transform: scale(1.05); // Powiększenie przy hover
+  }
 `;
 
 export const NavbarContainer = styled.nav`
@@ -203,10 +233,32 @@ export const ProfileImg = styled.img`
 
 // Stylizacja imienia i nazwiska
 export const Name = styled.h1`
-  font-size: 2rem;  // Zmniejszono
-  margin: 10px 0;
-  text-align: center;
+  font-size: 2rem; // Zwiększona czcionka
+  margin: 10px 0; // Odstępy góra-dół
+  text-align: center; // Wyrównanie tekstu do środka
+  color: white; // Kolor tekstu
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Wyraźny cień dla kontrastu
+  animation: fadeIn 1s ease-in-out; // Animacja pojawiania się
+
+  // Animacja wjazdu
+  @keyframes fadeIn {
+    from {
+      opacity: 0; // Początkowo niewidoczny
+      transform: translateY(-20px); // Wjazd z góry
+    }
+    to {
+      opacity: 1; // W pełni widoczny
+      transform: translateY(0); // Pozycja końcowa
+    }
+  }
+
+  // Efekt podkreślenia przy hover
+  &:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); // Zwiększenie cienia przy hover
+    transform: scale(1.05); // Powiększenie przy hover
+  }
 `;
+
 
 // Stylizacja kontenerów na linki nawigacyjne
 export const NavLinks = styled.div`
@@ -220,20 +272,55 @@ export const NavLinks = styled.div`
 
 // Stylizacja linku nawigacyjnego
 export const NavLink = styled.a`
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  text-align: left;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
+  color: #ffffff; // Kolor tekstu
+  text-decoration: none; // Brak podkreślenia
+  font-size: 1.5rem; // Rozmiar czcionki
+  text-align: left; // Wyrównanie tekstu
+  padding: 10px 20px; // Padding
+  display: flex; // Flexbox do centrowania
+  align-items: center; // Wyrównanie w pionie
+  border-radius: 5px; // Zaokrąglone rogi
+  background: linear-gradient(135deg, #27ae60, #2980b9); // Gradient w tle
+  transition: background 0.3s ease, transform 0.3s ease; // Płynne przejścia
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Delikatny cień
 
+  // Efekt podkreślenia przy hover
   &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s ease;
+    background: linear-gradient(135deg, #8e44ad, #2980b9); // Odwrotny gradient
+    color: #ecf0f1; // Zmiana koloru tekstu na jasny
+    transform: scale(1.05); // Powiększenie linku
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Zwiększenie cienia
+    animation: pulse 0.6s infinite; // Pulsowanie przy hover
   }
+
+  // Dodanie animacji pulsowania
+  @keyframes pulse {
+    0% {
+      transform: scale(1); // Normalny rozmiar
+    }
+    50% {
+      transform: scale(1.1); // Powiększenie
+    }
+    100% {
+      transform: scale(1); // Normalny rozmiar
+    }
+  }
+
+  // Dodanie animacji przy wjeździe
+  @keyframes fadeIn {
+    from {
+      opacity: 0; // Początkowo niewidoczny
+      transform: translateY(-10px); // Wjazd z góry
+    }
+    to {
+      opacity: 1; // W pełni widoczny
+      transform: translateY(0); // Pozycja końcowa
+    }
+  }
+
+  animation: fadeIn 0.5s ease; // Animacja wjazdu
 `;
+
 // Stylizacja ikon z odstępem od tekstu
 export const Icon = styled(FontAwesomeIcon)`
   margin-right: 15px;
@@ -319,20 +406,60 @@ export const HomeContainer = styled.div`
   background-color: #e8f1f2;
 `;
 
-// Tytuł główny na stronie
 export const Title = styled.h1`
-  font-size: 2rem;  // Zmniejszono
-  color: #34495e;
-  margin-bottom: 0px;
+  font-size: 2.5rem; // Zwiększona czcionka dla lepszego efektu
+  color: #34495e; // Podstawowy kolor tekstu
+  margin-bottom: 20px; // Odstęp poniżej
+  text-transform: capitalize; // Zmiana pierwszej litery każdego słowa na wielką
+  letter-spacing: 2px; // Rozstrzelenie liter
+  background: linear-gradient(135deg, #2980b9, #8e44ad); // Gradient w tle
+  -webkit-background-clip: text; // Wyświetlanie gradientu tylko na tekście
+  -webkit-text-fill-color: transparent; // Ustawienie koloru tekstu na przezroczysty
+  background-clip: calc();
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); // Subtelny cień
+  transition: transform 0.3s ease, color 0.3s ease; // Animacja transformacji i koloru
+  &:hover {
+    transform: scale(1.05); // Powiększenie tytułu przy hover
+    color: #2980b9; // Zmiana koloru tekstu na gradientowy podczas hover
+  }
+  // Dodaj animację wjazdu
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px); // Przesunięcie tytułu z góry
+      opacity: 0; // Ukryty na początku
+    }
+    to {
+      transform: translateY(0); // Przesunięcie do normalnej pozycji
+      opacity: 1; // W pełni widoczny
+    }
+  }
+  animation: slideIn 0.0s ease; // Dodanie animacji wjazdu
 `;
+
 
 // Podtytuł na stronie
 export const Subtitle = styled.h3`
-  font-size: 1.5rem;  // Zmniejszono
-  color: black;
-  margin-bottom: 20px;
+  font-size: 1.75rem; // Trochę większa czcionka
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 300; // Lżejsza czcionka dla elegancji
+  letter-spacing: 1.5px; // Delikatne rozstrzelenie liter
+  position: relative;
+  padding-bottom: 5px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c; // Podkreślenie w kolorze akcentu
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover:before {
+    width: 100%; // Efekt animowanego podkreślenia przy hover
+  }
 `;
-
 // Kontener dla przycisków
 export const ButtonContainer = styled.div`
   display: flex;
@@ -388,11 +515,25 @@ export const SkillsContainer = styled.div`
   text-align: center;
 `;
 
+// Tytuł umiejętności na stronie
 export const SkillsTitle = styled.h2`
-  font-size: 2rem; // Zmniejszono
-  color: #34495e;
-  margin-bottom: 20px;
+  font-size: 2.5rem; // Większa czcionka dla efektu
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px; // Rozstrzelenie liter
+  background: linear-gradient(135deg, #3498db, #2ecc71); // Gradient w tle
+  background-clip: border-box;
+  -webkit-background-clip: text; // Wyświetlanie gradientu tylko na tekście
+  -webkit-text-fill-color: transparent; // Ustawienie koloru tekstu na przezroczysty
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // Delikatny cień
+  transition: all 0.3s ease-in-out; // Efekt przejścia przy hover
+  &:hover {
+    letter-spacing: 5px; // Powiększenie rozstrzelenia liter przy hover
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); // Zwiększenie cienia
+  }
 `;
+
 
 export const SkillList = styled.ul`
   list-style-type: none;
@@ -429,3 +570,56 @@ export const ProfileImage = styled.img`
   height: 350px;
   object-fit: cover;
 `;
+
+
+// Kontener dla sekcji linków do mediów społecznościowych
+export const SocialLinksContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 0;
+`;
+
+// Stylizacja dla linków do mediów społecznościowych
+export const SocialMediaLink = styled.a`
+  background-color: #3b5998; // Kolor Facebooka
+  color: white;
+  border-radius: 10px; // Ustawienie mniejszego zaokrąglenia
+  padding: 12px; // Wewnętrzne marginesy
+  margin: 0 15px; // Odstęp między ikonami
+  display: flex; // Flexbox dla centrowania
+  justify-content: center; // Wyrównanie do środka
+  align-items: center; // Wyrównanie do środka
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 30px; // Szerokość ikony
+  height: 10px; // Wysokość ikony
+
+  &:hover {
+    transform: scale(1.1); // Powiększenie przy hover
+  }
+`;
+
+// Stylizacja dla Facebooka
+export const FacebookLink = styled(SocialMediaLink)`
+  background-color: #3b5998; // Kolor Facebooka
+  &:hover {
+    background-color: #8b9dc3; // Jaśniejszy odcień przy hover
+  }
+`;
+
+// Stylizacja dla GitHub
+export const GithubLink = styled(SocialMediaLink)`
+  background-color: #333; // Kolor GitHub
+  &:hover {
+    background-color: #444; // Jaśniejszy odcień przy hover
+  }
+`;
+
+// Stylizacja dla LinkedIn
+export const LinkedInLink = styled(SocialMediaLink)`
+  background-color: #0077b5; // Kolor LinkedIn
+  &:hover {
+    background-color: #0093d0; // Jaśniejszy odcień przy hover
+  }
+`;
+

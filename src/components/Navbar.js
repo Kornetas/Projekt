@@ -7,6 +7,9 @@ import {
   NavLinks,
   NavLink,
   Icon,
+  FacebookLink,
+  GithubLink,
+  LinkedInLink,
   WelcomeText, // Importuj WelcomeText
 } from './Styles'; // Upewnij się, że importujesz odpowiednie komponenty
 import { faUser, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -22,25 +25,24 @@ const Navbar = () => {
 
         {/* Zastąpienie tekstu powitalnego komponentem WelcomeText */}
         <WelcomeText>
-          Witam, nazywam się Arkadiusz Rak i jestem junior full stack developer<br />
+          Witam, nazywam się Arkadiusz Rak i jestem junior full stack developer.<br />
           Witam na mojej osobistej stronie internetowej! <br />
           
         </WelcomeText>
       </Profile>
 
-      {/* Sekcja linków do mediów społecznościowych */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', padding: '10px 0' }}>
-        <NavLink href="https://www.facebook.com/profile.php?id=100010319104907" target="_blank" rel="noopener noreferrer">
-          <Icon icon={faFacebook} />
-        </NavLink>
-        <NavLink href="https://github.com/Kornetas" target="_blank" rel="noopener noreferrer">
-          <Icon icon={faGithub} />
-        </NavLink>
-        <NavLink href="https://www.linkedin.com/in/arkadiusz-rak-807272306/" target="_blank" rel="noopener noreferrer">
-          <Icon icon={faLinkedin} />
-        </NavLink>
-      </div>
-
+     {/* Sekcja linków do mediów społecznościowych */}
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', padding: '10px 0' }}>
+  <FacebookLink href="https://www.facebook.com/profile.php?id=100010319104907" target="_blank" rel="noopener noreferrer">
+    <Icon icon={faFacebook} />
+  </FacebookLink>
+  <GithubLink href="https://github.com/Kornetas" target="_blank" rel="noopener noreferrer">
+    <Icon icon={faGithub} />
+  </GithubLink>
+  <LinkedInLink href="https://www.linkedin.com/in/arkadiusz-rak-807272306/" target="_blank" rel="noopener noreferrer">
+    <Icon icon={faLinkedin} />
+  </LinkedInLink>
+</div>
       {/* Dodaj większy odstęp przed linkami nawigacyjnymi */}
       <NavLinks style={{ marginTop: '30px' }}>
         <NavLink href="/"><Icon icon={faUser} /> O mnie</NavLink>

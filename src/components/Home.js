@@ -1,20 +1,27 @@
+// Home.js
 import React from 'react';
-import { Title, Subtitle, HomeContainer, ButtonContainer, Button, SkillsContainer, SkillsTitle, SkillList, SkillItem, SkillIcon, ProfileImageContainer, ProfileImage } from './Styles'; // Importuj style
+import { useNavigate } from 'react-router-dom'; // Importuj useNavigate
+import { Title, Subtitle, HomeContainer, ButtonContainer, Button, SkillsContainer, SkillsTitle, SkillList, SkillItem, SkillIcon, ProfileImageContainer, ProfileImage } from './Styles'; 
 import { faCode, faDatabase, faTools } from '@fortawesome/free-solid-svg-icons';
-import ProfilePic from './aro1.jpg'; // Importuj zdjęcie
-import AnimationWrapper from './Animation'; // Importuj AnimationWrapper
+import ProfilePic from './aro1.jpg'; 
+import AnimationWrapper from './Animation'; 
 
 const Home = () => {
+  const navigate = useNavigate(); // Inicjalizuj useNavigate
+
+  const handleButtonClick = () => {
+    navigate('/projects'); // Przejdź do komponentu Projects
+  };
+
   return (
     <AnimationWrapper>
-      <HomeContainer style={{ marginLeft: '260px' }}> {/* Upewnij się, że margin jest wystarczający, aby ominąć navbar */}
+      <HomeContainer style={{ marginLeft: '260px' }}>
         <ProfileImageContainer>
           <ProfileImage src={ProfilePic} alt="Arkadiusz Rak" />
           <Title>Arkadiusz Rak</Title>
         </ProfileImageContainer>
         <Subtitle>Full Stack Junior Developer</Subtitle>
 
-        {/* Dodany opis */}
         <p>
           Cześć! Nazywam się Arkadiusz Rak i jestem pasjonatem programowania, który z radością łączy świat frontendu i backendu. Jako Full Stack Junior Developer, posiadam solidne umiejętności w zakresie:
         </p>
@@ -48,13 +55,12 @@ const Home = () => {
           </SkillList>
         </SkillsContainer>
 
-        {/* Kontynuacja opisu */}
         <p>
           Z niecierpliwością oczekuję kolejnych wyzwań i możliwości rozwijania swoich umiejętności. Jeśli potrzebujesz pełnego zaangażowania i świeżego spojrzenia na projekt, zapraszam do kontaktu!
         </p>
 
         <ButtonContainer>
-          <Button>Dowiedz się więcej</Button>
+          <Button onClick={handleButtonClick}>Dowiedz się więcej</Button> {/* Dodaj obsługę kliknięcia */}
         </ButtonContainer>
       </HomeContainer>
     </AnimationWrapper>

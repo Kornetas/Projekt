@@ -5,13 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column; // Ustawiamy kolumny, aby elementy były jeden nad drugim.
-  margin-left: 300px; /* Przesunięcie w prawo, dostosuj według potrzeb */
+  margin-left: 329px; /* Przesunięcie w prawo, dostosuj według potrzeb */
   justify-content: center; // Wyśrodkowanie w pionie.
   align-items: center; // Wyśrodkowanie w poziomie.
-  height: 100vh; // Kontener zajmuje 100% wysokości widoku.
+  height: 90vh; // Kontener zajmuje 100% wysokości widoku.
+  font-size: 14px; // Zmniejsz rozmiar czcionki
   padding: 20px; // Dodajemy trochę paddingu.
   background-color: #ecf0f1;
-  gap: 30px; // Przestrzeń między sekcjami.
+  gap: 20px; // Przestrzeń między sekcjami.
   z-index: 1;
 
   @media (max-width: 600px) {
@@ -22,13 +23,13 @@ export const ContactContainer = styled.div`
 
 export const ContactInfo = styled.div`
   text-align: center; // Wyśrodkowanie tekstu.
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -36,7 +37,7 @@ export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   width:100%; // Szerokość 100% dla pełnej elastyczności.
-  max-width: 380px; // Maksymalna szerokość formularza.
+  max-width: 340px; // Maksymalna szerokość formularza.
   gap: 20px;
 
   @media (max-width: 600px) {
@@ -45,7 +46,7 @@ export const ContactForm = styled.form`
 `;
 // Tytuł sekcji Kontakt
 export const ContactTitle = styled.h2`
-  font-size: 2rem; // Ustalamy rozmiar czcionki
+  font-size: 1.6rem; // Ustalamy rozmiar czcionki
   color: #2c3e50; // Ustalamy kolor
   margin-bottom: 20px; // Odstęp poniżej nagłówka
   text-align: center; // Wyśrodkowanie tekstu
@@ -60,8 +61,8 @@ export const SocialLink = styled.a`
   display: flex;
   align-items: center;
   margin-right: 20px;
-  margin-left: 160px; /* Przesuwa element w prawo */
-  font-size: 1.5rem;  // Zmniejszono
+  margin-left: 130px; /* Przesuwa element w prawo */
+  font-size: 1.3rem;  // Zmniejszono
   /* color: #007bff; */
   text-decoration: none;
   margin-bottom: 10px;
@@ -79,7 +80,7 @@ export const SocialLink = styled.a`
 // Pole Input (np. imię, email)
 export const Input = styled.input`
   padding: 10px;
-  font-size: 1.5rem;  // Zmniejszono
+  font-size: 1.0rem;  // Zmniejszono
   border: 1px solid #bdc3c7;
   border-radius: 5px;
   background-color: white;
@@ -92,7 +93,7 @@ export const Input = styled.input`
 // Pole Textarea
 export const Textarea = styled.textarea`
   padding: 10px;
-  font-size: 1.5rem;  // Zmniejszono
+  font-size: 1.4rem;  // Zmniejszono
   border: 1px solid #bdc3c7;
   border-radius: 5px;
   background-color: white;
@@ -109,7 +110,7 @@ export const SubmitButton = styled.button`
   color: white; // Kolor tekstu
   border: none; // Brak obramowania
   border-radius: 30px; // Zaokrąglone rogi
-  font-size: 1.5rem; // Zmniejszona czcionka
+  font-size: 1.3rem; // Zmniejszona czcionka
   cursor: pointer; // Kursor w postaci wskaźnika
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); // Cień pod przyciskiem
   transition: all 0.3s ease; // Płynna animacja dla wszystkich właściwości
@@ -626,3 +627,22 @@ export const LinkedInLink = styled(SocialMediaLink)`
   }
 `;
 
+// Styles.js
+
+
+export const ErrorMessage = styled.div`
+  color: red;
+  margin-top: 5px;
+  font-size: 0.875em; /* Slightly smaller font size */
+`;
+
+export const CaptchaContainer = styled.div`
+  border: 3px solid 		#00BFFF; /* Kolor ramki */
+  padding: 10px; /* Padding wewnątrz ramki */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  display: inline-block; /* Pozwoli na zawijanie tekstu */
+  margin: 10px 0; /* Margines wokół kontenera */
+  font-size: 1.5em; /* Rozmiar czcionki dla tekstu CAPTCHA */
+  text-align: center; /* Wyśrodkowanie tekstu */
+  background-color: #f7f7f7; /* Jasny kolor tła */
+`;

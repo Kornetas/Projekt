@@ -20,6 +20,8 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
    ```bash
    git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
 
+2. **Wpisz w terminale komendy**
+3. Zainstaluj wszystkie niezbędne pakiety oraz uruchom aplikację:
 
   ```bash
      npm install

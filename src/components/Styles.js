@@ -336,7 +336,7 @@ export const ProjectsContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto; /* Wyśrodkowanie kontenera */
   text-align: center;
-  margin-left: 320px; /* Przesunięcie w prawo, dostosuj według potrzeb */
+  margin-left: 340px; /* Przesunięcie w prawo, dostosuj według potrzeb */
 
   h2 {
     margin-bottom: 30px;
@@ -442,7 +442,7 @@ export const Title = styled.h1`
 
 // Podtytuł na stronie
 export const Subtitle = styled.h3`
-  font-size: 1.75rem; // Trochę większa czcionka
+  font-size: 1.4rem; // Trochę większa czcionka
   color: #2c3e50;
   margin-bottom: 25px;
   font-weight: 300; // Lżejsza czcionka dla elegancji
@@ -484,43 +484,17 @@ export const Button = styled.button`
   }
 `;
 
-// Kontener dla About
-export const AboutContainer = styled.div`
-  padding-left: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f7f9fa;
-`;
 
-// Tytuł sekcji About
-export const AboutTitle = styled.h2`
-  font-size: 2rem; // Zmniejszono
-  color: #34495e;
-  margin-bottom: 20px;
-`;
-
-// Tekst w sekcji About
-export const AboutText = styled.p`
-  font-size: 1.2rem; // Zmniejszono
-  color: #2c3e50;
-  text-align: center;
-  max-width: 800px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-`;
 
 // Stylizacja dla Skills
 export const SkillsContainer = styled.div`
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
 `;
 
 // Tytuł umiejętności na stronie
 export const SkillsTitle = styled.h2`
-  font-size: 2.5rem; // Większa czcionka dla efektu
+  font-size: 1.7rem; // Większa czcionka dla efektu
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 3px; // Rozstrzelenie liter
@@ -569,8 +543,8 @@ export const ProfileImageContainer = styled.div`
 
 export const ProfileImage = styled.img`
   border-radius: 10%;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 `;
 

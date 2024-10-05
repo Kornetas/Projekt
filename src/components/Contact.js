@@ -192,7 +192,7 @@ const Contact = () => {
     <strong>{captcha}</strong> {/* Only the CAPTCHA code is inside the border */}
   </CaptchaContainer>
   <p style={{ fontStyle: 'italic', color: 'red' }}>
-    Wpisz kod z obrazka (użyj wielkich i małych liter)
+    Użyj wielkich i małych liter
   </p>
   <Input
     type="text"

@@ -28,9 +28,7 @@ cd nazwa-repozytorium
 Zainstaluj zależności
 Upewnij się, że masz zainstalowane Node.js i npm. Następnie zainstaluj wszystkie niezbędne pakiety:
 
-bash
-Skopiuj kod
-npm install
+`bash npm install`
 Uruchom aplikację
 A teraz czas na uruchomienie! Wpisz:
 

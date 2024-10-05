@@ -21,6 +21,7 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
    git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
 
 2. **Wpisz w terminale komendy**
+   
    Zainstaluj wszystkie niezbędne pakiety oraz uruchom aplikację:
 
   ```bash

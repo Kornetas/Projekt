@@ -15,12 +15,13 @@ Witaj w mojej stronie internetowej zbudowanej przy użyciu **React**! 🌟 Jest 
 
 Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższymi krokami:
 
-1. **Sklonuj repozytorium**  
+1. **Sklonuj repozytorium**
+ 
    Otwórz terminal i wpisz:
    ```bash
    git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
 
-2. **Wpisz w terminale komendy**
+3. **Wpisz w terminale komendy**
    
    Zainstaluj wszystkie niezbędne pakiety oraz uruchom aplikację:
 

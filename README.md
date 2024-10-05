@@ -20,6 +20,7 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
    Otwórz terminal i wpisz:
    ```bash
    git clone https://github.com/Kornetas/Projekt.git
+   code . Projekt/ (uruchom VC + załaduj folder z plikami)
 
 3. **Wpisz w terminale komendy**
    
@@ -27,8 +28,6 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
 
   ```bash
      npm install
-     npm install libphonenumber-js
-     npm install react-toastify
      npm start
 ```
 

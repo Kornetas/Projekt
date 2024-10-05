@@ -1,4 +1,63 @@
-# Getting Started with Create React App
+# 🌐 Moja Strona Internetowa
+
+## Opis
+
+Witaj w mojej stronie internetowej zbudowanej przy użyciu **React**! 🌟 Jest to dynamiczna aplikacja, która wykorzystuje różnorodne biblioteki, aby dostarczyć użytkownikom wyjątkowe doświadczenia. Zobacz, co oferuje!
+
+## Technologie
+
+- **React**: Główna biblioteka do budowy interfejsu użytkownika.
+- **React Icons**: Łatwe dodawanie pięknych ikon do Twojej aplikacji.
+- **React Toastify**: Powiadomienia toastowe, które dodają interaktywności.
+- **libphonenumber-js**: Walidacja i formatowanie numerów telefonów z całego świata.
+
+## 🚀 Jak uruchomić projekt
+
+Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższymi krokami:
+
+1. **Sklonuj repozytorium**  
+   Otwórz terminal i wpisz:
+   ```bash
+   git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
+Przejdź do katalogu projektu
+Wejdź do folderu z projektem:
+
+bash
+Skopiuj kod
+cd nazwa-repozytorium
+Zainstaluj zależności
+Upewnij się, że masz zainstalowane Node.js i npm. Następnie zainstaluj wszystkie niezbędne pakiety:
+
+bash
+Skopiuj kod
+npm install
+Uruchom aplikację
+A teraz czas na uruchomienie! Wpisz:
+
+bash
+Skopiuj kod
+npm start
+Odwiedź stronę
+Otwórz przeglądarkę i przejdź do: http://localhost:3000
+Voilà! 🎉 Twoja aplikacja jest teraz dostępna!
+
+Użycie
+Aplikacja jest intuicyjna i łatwa w obsłudze. [Dodaj tutaj krótką instrukcję obsługi lub opis kluczowych funkcji aplikacji, jeśli to potrzebne. Możesz dodać zrzuty ekranu lub inne materiały wizualne, aby pomóc użytkownikom lepiej zrozumieć, jak korzystać z Twojej strony.]
+
+Wkład
+Chcesz przyczynić się do rozwoju projektu? To fantastycznie! Oto, co możesz zrobić:
+
+Otwórz nowe problemy (issues) w repozytorium, aby zgłosić błędy lub pomysły na nowe funkcje.
+Zgłaszaj pull requesty z nowymi funkcjami lub poprawkami. Upewnij się, że opisujesz zmiany, które wprowadzasz.
+Licencja
+Ten projekt jest objęty licencją [Wstaw tutaj rodzaj licencji]. Zapoznaj się z plikiem LICENSE, aby uzyskać więcej informacji.
+
+Kontakt
+Masz pytania lub sugestie? Skontaktuj się ze mną na:
+
+E-mail: [twój.e-mail@example.com]
+LinkedIn: Twój profil LinkedIn
+Dzięki za odwiedzenie mojej strony! 🌟
 
 
 ### `npm install react-toastify`
@@ -10,44 +69,3 @@
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-# Simple Calculator
-
-This is a simple calculator built with HTML, CSS, and vanilla JavaScript. The calculator supports basic arithmetic operations: addition, subtraction, multiplication, and division.
-
-## Getting Started
-
-### Prerequisites
-
-To run this project, you only need a web browser.
-
-### Installation
-
-1. **Fork the Repository**
-   - Click the "Fork" button at the top right of this repository page to create a copy of this repository in your GitHub account.
-
-2. **Clone the Repository**
-   - Clone the forked repository to your local machine:
-     ```bash
-     git clone https://github.com/YOUR-USERNAME/24w4-starter-calculator.git
-     cd 24w4-starter-calculator
-     ```
-
-3. **Commit Regularly**
-   - Make sure to commit your changes regularly:
-     ```bash
-     git add .
-     git commit -m "Your descriptive commit message"
-     git push origin main
-     ```
-
-4. **Open the Project**
-   - Open `index.html` in your preferred web browser to see the calculator in action.
-
-### File Structure
-
-- `index.html` - The main HTML file that contains the structure of the calculator.
-- `styles.css` - The CSS file that styles the calculator.
-- `script.js` - The JavaScript file that contains the logic for the calculator.

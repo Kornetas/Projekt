@@ -26,8 +26,5 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
      npm install libphonenumber-js
      npm install react-toastify
      npm start
-     ```Otwórz przeglądarkę i przejdź do: http://localhost:3000
+  Otwórz przeglądarkę i przejdź do: http://localhost:3000
 🎉 Twoja aplikacja jest teraz dostępna!
-
-
-

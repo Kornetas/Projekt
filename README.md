@@ -19,51 +19,16 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
    Otwórz terminal i wpisz:
    ```bash
    git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
-Przejdź do katalogu projektu
-Wejdź do folderu z projektem:
 
-bash
-Skopiuj kod
-cd nazwa-repozytorium
-Zainstaluj zależności
-Upewnij się, że masz zainstalowane Node.js i npm. Następnie zainstaluj wszystkie niezbędne pakiety:
 
-`bash npm install`
-Uruchom aplikację
-A teraz czas na uruchomienie! Wpisz:
-
-bash
-Skopiuj kod
-npm start
-Odwiedź stronę
+  ```bash
+     npm install
+     npm install libphonenumber-js
+     npm install react-toastify
+     npm start
+     ```
 Otwórz przeglądarkę i przejdź do: http://localhost:3000
-Voilà! 🎉 Twoja aplikacja jest teraz dostępna!
-
-Użycie
-Aplikacja jest intuicyjna i łatwa w obsłudze. [Dodaj tutaj krótką instrukcję obsługi lub opis kluczowych funkcji aplikacji, jeśli to potrzebne. Możesz dodać zrzuty ekranu lub inne materiały wizualne, aby pomóc użytkownikom lepiej zrozumieć, jak korzystać z Twojej strony.]
-
-Wkład
-Chcesz przyczynić się do rozwoju projektu? To fantastycznie! Oto, co możesz zrobić:
-
-Otwórz nowe problemy (issues) w repozytorium, aby zgłosić błędy lub pomysły na nowe funkcje.
-Zgłaszaj pull requesty z nowymi funkcjami lub poprawkami. Upewnij się, że opisujesz zmiany, które wprowadzasz.
-Licencja
-Ten projekt jest objęty licencją [Wstaw tutaj rodzaj licencji]. Zapoznaj się z plikiem LICENSE, aby uzyskać więcej informacji.
-
-Kontakt
-Masz pytania lub sugestie? Skontaktuj się ze mną na:
-
-E-mail: [twój.e-mail@example.com]
-LinkedIn: Twój profil LinkedIn
-Dzięki za odwiedzenie mojej strony! 🌟
+🎉 Twoja aplikacja jest teraz dostępna!
 
 
-### `npm install react-toastify`
-
-### `npm install libphonenumber-js`
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

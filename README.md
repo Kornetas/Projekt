@@ -19,7 +19,7 @@ Chcesz uruchomić aplikację na swoim komputerze? Postępuj zgodnie z poniższym
  
    Otwórz terminal i wpisz:
    ```bash
-   git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-repozytorium.git
+   git clone https://github.com/Kornetas/Projekt.git
 
 3. **Wpisz w terminale komendy**
    
